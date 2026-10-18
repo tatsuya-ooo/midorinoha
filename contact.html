@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせ - ミドリノハ工房</title>
+    <meta
+      name="description"
+      content="ミドリノハ工房への見学のお申し込みやご質問のためのお問い合わせフォームです。※デモのため、入力しても送信されません。ポートフォリオ用の架空のサイトです。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/ress.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner inner">
+        <p class="header__logo"><a href="./index.html">ミドリノハ工房</a></p>
+        <button
+          class="hamburger"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="global-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+          <ul class="nav__list">
+            <li><a href="./service.html">事業内容</a></li>
+            <li><a href="./schedule.html">1日の流れ</a></li>
+            <li><a href="./about.html">会社概要</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="page-header__img">
+          <img
+            src="./assets/images/page-header.jpg"
+            alt="陽光あふれる緑のクリエイティブデスク"
+          />
+        </div>
+        <div class="page-header__overlay">
+          <h1 class="page-header__title">お問い合わせ</h1>
+          <p class="page-header__note">
+            ※当サイトはポートフォリオ用の架空の事業所です。実在の店舗・サービスではありません。
+          </p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="inner-narrow">
+          <div class="page-desc">
+            <p>
+              見学のお申し込みや、お仕事の内容についてのご質問は、下のフォームからお送りください。
+            </p>
+            <p class="contact__note">
+              ※このフォームはポートフォリオ用のデモです。入力しても送信されません。個人情報は入力しないでください。
+            </p>
+          </div>
+          <section class="contact-form">
+            <h2 class="section-title">フォームから送る</h2>
+            <form>
+              <div class="contact-form__field">
+                <label for="contact-name" class="is-required">お名前</label>
+                <input
+                  type="text"
+                  name="contact-name"
+                  id="contact-name"
+                  required
+                  placeholder="山田 太郎"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label for="contact-email" class="is-required">
+                  メールアドレス
+                </label>
+                <input
+                  type="email"
+                  name="contact-email"
+                  id="contact-email"
+                  required
+                  placeholder="example@example.com"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label for="contact-tel">電話番号</label>
+                <input
+                  type="tel"
+                  name="contact-tel"
+                  id="contact-tel"
+                  placeholder="XXX-XXXX-XXXX"
+                />
+              </div>
+              <div class="contact-form__field">
+                <label for="contact-type" class="is-required">
+                  お問い合わせの種類
+                </label>
+                <select name="contact-type" id="contact-type" required>
+                  <option value="">選択してください</option>
+                  <option value="visit">見学を希望する</option>
+                  <option value="service">事業内容について知りたい</option>
+                  <option value="flow">利用の流れについて知りたい</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+              <div class="contact-form__field">
+                <label for="contact-message" class="is-required">
+                  お問い合わせ内容
+                </label>
+                <textarea
+                  name="contact-message"
+                  id="contact-message"
+                  required
+                  placeholder="ご質問やご希望をご記入ください。"
+                ></textarea>
+              </div>
+              <div class="contact-form__privacy-field">
+                <input
+                  type="checkbox"
+                  name="contact-privacy"
+                  id="contact-privacy"
+                  required
+                />
+                <label for="contact-privacy">
+                  個人情報の取り扱いに同意します。
+                </label>
+              </div>
+              <button type="submit" class="button">送信する</button>
+              <p class="contact-form__result" role="status" hidden>
+                お問い合わせありがとうございます。※これはデモのため、実際には送信されていません。
+              </p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <small class="footer__copy">
+          © 2026 ミドリノハ工房 All Rights Reserved.
+        </small>
+        <p class="footer__note">
+          ※当サイトはポートフォリオ用の架空の事業所です。実在の店舗・サービスではありません。
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
